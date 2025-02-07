@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f6f7fb;
+    overflow-x: hidden;
+}
+
+.xd{
+    display: flex;
+    flex-direction: row;
+}
+
+td img{
+  width: 70px;
+  height: 70px;
+  border-radius: 25px;
+  transition: transform ease 0.5s;
+}
+
+td img:hover{
+  transform:  scale(2);
+  transition: transform ease 0.5s;
+}
+
+thead th{
+  position: sticky;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+
+table,th,td{
+  padding: 1rem;
+  border-collapse: collapse;
+}
+
+table tr:nth-child(even){
+  background-color: RGB(222, 184, 135);
+}
+ 
+table tr:hover{
+  background-color: RGB(169, 169, 169);
+}
+
+.table_wrapper {
+  max-height: 100%;
+  overflow-y: auto; 
+  overflow-x: auto;
+  width: 100%;
+  font-family: 'roboto',sans-serif;
+  font-size: 1.1rem;
+  border-collapse: collapse;
+}
+
+.table_container{
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  border-radius: 2rem;
+  background-color: gainsboro;
+  overflow: hidden;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-end; 
+  flex-wrap: wrap;
+}
+
+.submitBtn {
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px){
+
+  table {
+    width: 100%;  
+    border: none; 
+    table-layout: fixed; 
+  }
+
+  table thead tr {
+    display: none;
+  }
+
+  /* Mostrar las filas de forma vertical */
+  table tr {
+    display: block;
+  }
+
+  table th, table td {
+    padding: 0.8rem; 
+    font-size: 0.9rem;  
+    width: 95%; 
+  }
+
+  /* Estilo de las celdas */
+  table td {
+    display: flex;
+    text-align: left;
+    display: block;
+    font-size: 0.9rem; 
+    border-bottom: 1px solid #ccc;
+    flex-wrap: wrap;
+    padding: 1rem; 
+    word-wrap: break-word; 
+  }
+
+
+  td img {
+    max-width: 100%; /* Escala la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+    border-radius: 25px;
+    transition: transform ease 0.5s;
+  }
+
+  .table_container {
+    padding: 1rem; 
+  }
+
+  .table_wrapper {
+    font-size: 0.9rem; 
+  }
+
+  .form {
+    flex-direction: column; 
+    gap: 1rem;
+  }
+
+  .formGroup {
+      gap: 0.5rem;
+  }
+
+  .submitBtn {
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .formRow {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .formGroup {
+    padding-right: 2rem;
+    width: 100%;
+  }
+
+  td img:hover{
+    transform:  scale(1.5);
+  }
+ 
+}

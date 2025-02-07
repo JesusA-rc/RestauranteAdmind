@@ -1,0 +1,68 @@
+.foods{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+    padding: 2rem;
+    gap: 3rem;
+    width: calc(100% - 13rem); 
+    max-width: calc(100% - 13rem); 
+}
+
+.search{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%; 
+}
+
+
+.foods{
+    display: flex;
+    flex-direction: column;
+    margin-left: 13rem;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.search{
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'poppins',sans-serif;
+    text-align: center;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+@media (max-width: 768px){
+
+    .foods{
+        margin-left: 0.5rem;
+        width: 100%;
+    }
+
+    .food{
+        padding: 1rem;
+        gap: 2rem;
+    }
+
+    .filters{
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,32 @@
+.states_button{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10rem;
+    width: 100vw; 
+    max-width: 100%;
+  }
+
+  .states_button button{
+    border-radius: 25px;
+    font-weight: bold;
+  }
+
+  .states_button button:hover {
+    background-color: rgb(88, 172, 144); 
+    cursor: pointer;
+  }
+  
+  .states_button .active {
+    background-color: aquamarine; 
+  }
+  
+@media (max-width: 768px){
+  
+  .states_button{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows:  repeat(3,1fr);
+    gap: 1rem;
+    padding-right: 2rem;
+   }
+  
+}
