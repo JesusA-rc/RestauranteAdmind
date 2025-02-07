@@ -12,11 +12,6 @@ body{
     overflow-x: hidden;
 }
 
-.xd{
-    display: flex;
-    flex-direction: row;
-}
-
 td img{
   width: 70px;
   height: 70px;
